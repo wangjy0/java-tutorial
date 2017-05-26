@@ -9,7 +9,7 @@ public class EvalScript {
 		// create a script engine manager
 		ScriptEngineManager sem = new ScriptEngineManager();
 		// create a Nashorn script engine
-		ScriptEngine se = sem.getEngineByName("nashorn");
+		ScriptEngine se = sem.getEngineByExtension("js");//getEngineByName("nashorn");
 		// evaluate JavaScript statement
 		try {
 			se.eval("print('Hello, World!');");
